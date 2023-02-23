@@ -1,6 +1,11 @@
-import React from 'react';
+import React, { useState } from 'react';
 import ReactDOM from 'react-dom/client';
-import { createBrowserRouter, Outlet, RouterProvider } from 'react-router-dom';
+import {
+  createBrowserRouter,
+  Link,
+  Outlet,
+  RouterProvider,
+} from 'react-router-dom';
 
 import Header from './components/Header';
 import Body from './components/Body';
@@ -22,10 +27,11 @@ const AppLayout = () => {
           View Button
         </button>
       </div>
-      {/**<Outlet />
-      <Footer /> */}
 
-      <ABC />
+      <Outlet />
+      <Footer />
+
+      {/**<ABC /> */}
     </Provider>
   );
 };
