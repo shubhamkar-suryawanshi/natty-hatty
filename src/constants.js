@@ -1,3 +1,78 @@
-export const IMG_URL = '';
+export const admin = {
+  firstName: 'Shub',
+  lastName: 'Surya',
+  email: 'surya@gmail.com',
+  phone: 8485060710,
+  gradYear: 2020,
+  DOB: '10/09/1994',
+  address: {
+    line1: 'Near Raj Hotel',
+    line2: 'Shahupuri',
+    city: 'Kolhapur',
+    country: 'India',
+    zipCode: 416001,
+  },
+};
 
-export const IMG_CDN_URL = '';
+export const users = [
+  {
+    firstName: 'Rushi',
+    lastName: 'Surya',
+    email: 'rushi@gmail.com',
+    phone: 8485060720,
+    gradYear: 2021,
+    DOB: '15/11/1997',
+    address: {
+      line1: 'Near Raj Hotel',
+      line2: 'Shahupuri',
+      city: 'Kolhapur',
+      country: 'India',
+      zipCode: 416001,
+    },
+  },
+  {
+    firstName: 'Banty',
+    lastName: 'Patil',
+    email: 'patil@gmail.com',
+    phone: 8485060810,
+    gradYear: 2010,
+    DOB: '10/09/1984',
+    address: {
+      line1: 'Near Station Road',
+      line2: 'Rajapuri',
+      city: 'Pune',
+      country: 'India',
+      zipCode: 410001,
+    },
+  },
+  {
+    firstName: 'Paddy',
+    lastName: 'S',
+    email: 'paddy@gmail.com',
+    phone: 8485060910,
+    gradYear: 2015,
+    DOB: '10/01/1990',
+    address: {
+      line1: 'Shivaji Peth',
+      line2: 'Rankala',
+      city: 'Kolhapur',
+      country: 'India',
+      zipCode: 416001,
+    },
+  },
+  {
+    firstName: 'Fabby',
+    lastName: 'Pandit',
+    email: 'pandit@gmail.com',
+    phone: 8485062122,
+    gradYear: 2016,
+    DOB: '01/02/1994',
+    address: {
+      line1: 'Gangavesh',
+      line2: 'Jotiba Road',
+      city: 'Kolhapur',
+      country: 'India',
+      zipCode: 416010,
+    },
+  },
+];

@@ -10,6 +10,7 @@ import Error from './components/Error';
 import About from './components/About';
 import { Provider } from 'react-redux';
 import store from './shared/store';
+import ABC from './components/ABC';
 
 const AppLayout = () => {
   return (
@@ -21,8 +22,10 @@ const AppLayout = () => {
           View Button
         </button>
       </div>
-      <Outlet />
-      <Footer />
+      {/**<Outlet />
+      <Footer /> */}
+
+      <ABC />
     </Provider>
   );
 };
