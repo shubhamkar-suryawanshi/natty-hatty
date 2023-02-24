@@ -7,15 +7,15 @@ import {
   RouterProvider,
 } from 'react-router-dom';
 
-import Header from './components/Header';
-import Body from './components/Body';
-import Footer from './components/Footer';
-import Contact from './components/Contact';
-import Error from './components/Error';
-import About from './components/About';
+import Header from './src/components/Header';
+import Body from './src/components/Body';
+import Footer from './src/components/Footer';
+import Contact from './src/components/Contact';
+import Error from './src/components/Error';
+import About from './src/components/About';
 import { Provider } from 'react-redux';
-import store from './shared/store';
-import ABC from './components/ABC';
+import store from './src/shared/store';
+import ABC from './src/components/ABC';
 
 const AppLayout = () => {
   return (
