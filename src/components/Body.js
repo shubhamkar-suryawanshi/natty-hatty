@@ -1,30 +1,76 @@
-import Account from './Account';
-import Activities from './Activities';
-import Address from './Address';
-import Family from './Family';
-import Invites from './Invites';
-import Profile from './Profile';
+import dots from '../assets/dots.svg';
+import { Link } from 'react-router-dom';
+import { useState } from 'react';
+import MyProfile from './MyProfile';
+import Tablet from './Tablet';
+import Desktop from './Desktop';
 
 const Body = () => {
+  const [isSuccessful, setIsSuccessful] = useState(true);
   return (
-    <div className="grid grid-cols-12 grid-rows-4 md:grid-rows-6 sm:grid-cols-1 sm:grid-rows-2">
-      <div className="col-span-9 md:col-span-7 md:row-span-2 sm:row-span-2 sm:col-span-1">
-        <Profile />
+    <div>
+      <div className="md:hidden lg:block">
+        <div className="heading flex items-center justify-between p-2">
+          <h1 className=" font-bold text-xl md:hidden lg:block">My Account</h1>
+          {isSuccessful ? (
+            <button
+              className="mb:hidden sm:hidden md:hidden lg:block my-1 text-green-700  bg-green-100 font-semibold w-72 py-1 rounded-sm"
+              onClick={() => {
+                setIsSuccessful(false);
+              }}
+            >
+              Success Message Here
+            </button>
+          ) : (
+            <button
+              className="mb:hidden sm:hidden md:hidden lg:block my-1 text-red-700  bg-red-100 font-semibold w-72 py-1 rounded-sm"
+              onClick={() => {
+                setIsSuccessful(true);
+              }}
+            >
+              Warning Message Here
+            </button>
+          )}
+          <img className=" md:hidden lg:hidden" src={dots} alt="dots" />
+          <button className="mb:hidden sm:hidden md:hidden lg:block text-white my-1 bg-gray-700 px-2 py-1 rounded-sm">
+            View Button
+          </button>
+        </div>
+        <ul className="flex justify-between p-2 md:hidden lg:hidden">
+          <Link
+            to={'/'}
+            className="text-[#7D7D7D] font-bold focus:text-[#F8991F] focus:underline"
+          >
+            Profile
+          </Link>
+          <Link
+            to={'/wallet'}
+            className="text-[#7D7D7D] font-bold focus:text-[#F8991F] focus:underline"
+          >
+            Wallet
+          </Link>
+          <Link
+            to={'/activity'}
+            className="text-[#7D7D7D] font-bold focus:text-[#F8991F] focus:underline"
+          >
+            Activities
+          </Link>
+          <Link
+            to={'/invities'}
+            className="text-[#7D7D7D] font-bold focus:text-[#F8991F] focus:underline"
+          >
+            Invitations
+          </Link>
+        </ul>
+        <div className="lg:hidden">
+          <MyProfile />
+        </div>
       </div>
-      <div className="col-span-3 row-span-2 md:col-span-5 md:row-span-2 sm:row-span-1 sm:col-span-1">
-        <Family />
+      <div className="mb:hidden sm:hidden md:grid lg:hidden">
+        <Tablet />
       </div>
-      <div className="col-span-5 md:col-span-6 md:row-span-2 sm:hidden">
-        <Account />
-      </div>
-      <div className="col-span-4 row-span-3 md:col-span-6 md:row-span-2 sm:hidden">
-        <Activities />
-      </div>
-      <div className="col-span-5 row-span-2 md:col-span-6 md:row-span-2 sm:hidden">
-        <Address />
-      </div>
-      <div className="row-span-2 col-span-3 md:col-span-6 md:row-span-2 sm:hidden">
-        <Invites />
+      <div className="mb:hidden sm:hidden md:hidden lg:grid">
+        <Desktop />
       </div>
     </div>
   );

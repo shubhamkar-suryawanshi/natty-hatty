@@ -1,6 +1,6 @@
 const Address = () => {
   return (
-    <div className="flex flex-col bg-gray-100 p-5 m-5 rounded-sm">
+    <div className="flex flex-col bg-gray-100 p-5 m-5 rounded-sm md:py-5 md:px-3 md:m-0">
       <h1 className="font-bold p-2 ">Billing Address</h1>
       <label className=" p-2 ">
         <input
@@ -13,12 +13,12 @@ const Address = () => {
         <div className="flex p-2 m-2 flex-col justify-between py-1">
           <p className="pr-2">First Name:</p>
           <input
-            className="border w-52 border-gray-300 rounded-sm"
+            className="border w-52 lg:w-52 md:w-44 border-gray-300 rounded-sm"
             type="text"
           />
           <p className="pr-2">Address line 1:</p>
           <input
-            className="border w-52 border-gray-300 rounded-sm"
+            className="border w-52 lg:w-52 md:w-44 border-gray-300 rounded-sm"
             type="text"
           />
           <div className="flex">
@@ -41,12 +41,12 @@ const Address = () => {
         <div className="flex p-2 m-2 flex-col justify-between py-1">
           <p className="pr-2">Last Name:</p>
           <input
-            className="border w-52 border-gray-300 rounded-sm"
+            className="border w-52 lg:w-52 md:w-44 border-gray-300 rounded-sm"
             type="text"
           />
           <p className="pr-2">Address line 2:</p>
           <input
-            className="border w-52 border-gray-300 rounded-sm"
+            className="border w-52 lg:w-52 md:w-44 border-gray-300 rounded-sm"
             type="text"
           />
           <div className="flex">
@@ -67,7 +67,7 @@ const Address = () => {
           </div>
         </div>
       </div>
-      <button className="text-white my-1 bg-gray-700 px-2 py-1 rounded-sm w-36 ">
+      <button className="text-white mt-1 bg-gray-700 px-2 py-1 rounded-sm w-36 ">
         Edit Details
       </button>
     </div>

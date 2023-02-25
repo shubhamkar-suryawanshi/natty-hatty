@@ -1,25 +1,39 @@
 import { Link } from 'react-router-dom';
 import profile from '../assets/profile.png';
+import IconButton from '@mui/material/IconButton';
+import MenuIcon from '@mui/icons-material/Menu';
+import NotificationsNoneIcon from '@mui/icons-material/NotificationsNone';
 
 const Header = () => {
   return (
-    <div className="flex items-center justify-between bg-gray-700 text-white">
-      <div className="px-3">
-        <Link to={'/'}>LOGO</Link>
+    <div className="flex items-center p-2 justify-between bg-gray-700 text-white md:p-3">
+      <div className="left flex items-center">
+        <IconButton className="lg:hidden">
+          <MenuIcon className="text-[#F8991F]" />
+        </IconButton>
+
+        <div className="px-1 font-bold">
+          <Link to={'/'}>LOGO</Link>
+        </div>
+
+        <ul className="hidden  lg:flex lg: pl-28 lg:space-x-20">
+          <li className="dropdown relative inline-block">
+            <Link to={'/'}>Menu 1</Link>
+          </li>
+          <li className="">
+            <Link to={'/about'}>Menu 2</Link>
+          </li>
+          <li className="">
+            <Link to={'/contact'}>Menu 3</Link>
+          </li>
+        </ul>
       </div>
-      <ul className="flex ">
-        <li className="px-3">
-          <Link to={'/'}>Home</Link>
-        </li>
-        <li className="px-3">
-          <Link to={'/about'}>About</Link>
-        </li>
-        <li className="px-3">
-          <Link to={'/contact'}>Contact</Link>
-        </li>
-      </ul>
-      <div className="profile">
-        <img className="w-16 mr-5" src={profile} alt="profile" />
+
+      <div className="right flex items-center">
+        <IconButton>
+          <NotificationsNoneIcon className="text-white" />
+        </IconButton>
+        <img className="w-8 mr-5" src={profile} alt="profile" />
       </div>
     </div>
   );
