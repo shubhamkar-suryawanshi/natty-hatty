@@ -21,10 +21,10 @@ const Tablet = () => {
         <div class=" rounded-md  h-[425px]  mr-3 mb-0 bg-[#F5F6F8] col-span-6 row-span-2">
           <Address />
         </div>
-        <div class=" rounded-md   h-[425px] ml-3  my-0 bg-[#F5F6F8] col-span-6 row-span-2">
+        <div class=" rounded-md   h-[425px] ml-3  mt-[-60px] my-0 bg-[#F5F6F8] col-span-6 row-span-2">
           <Activities />
         </div>
-        <div class=" rounded-md  h-[425px]  mr-3 my-0 bg-[#F5F6F8] col-span-6 row-span-2">
+        <div class=" rounded-md  h-[425px]  mr-3 mt-[-60px] my-0 bg-[#F5F6F8] col-span-6 row-span-2">
           <Invites />
         </div>
       </div>

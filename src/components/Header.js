@@ -3,6 +3,7 @@ import profile from '../assets/profile.png';
 import IconButton from '@mui/material/IconButton';
 import MenuIcon from '@mui/icons-material/Menu';
 import NotificationsNoneIcon from '@mui/icons-material/NotificationsNone';
+import Dropdown from './Dropdown';
 
 const Header = () => {
   return (
@@ -18,7 +19,7 @@ const Header = () => {
 
         <ul className="hidden  lg:flex lg: pl-28 lg:space-x-20">
           <li className="dropdown relative inline-block">
-            <Link to={'/'}>Menu 1</Link>
+            <Dropdown />
           </li>
           <li className="">
             <Link to={'/about'}>Menu 2</Link>

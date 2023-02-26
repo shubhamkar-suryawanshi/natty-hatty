@@ -15,7 +15,7 @@ const Profile = () => {
 
   return (
     <div>
-      <div className="flex flex-col lg:flex-row bg-gray-100 p-5 mx-5 md:py-5 md:px-3 md:h-[405px] md:m-0 lg:items-center  rounded-t-md items-center md:flex-col md:items-start lg:h-[200px]">
+      <div className="flex flex-col lg:flex-row bg-gray-100 p-5 mx-5 md:py-5 md:px-3 md:h-[405px] md:m-0 lg:items-center  rounded-t-md items-center md:flex-col md:items-start lg:h-[200px] lg:py-0 lg:space-y-0">
         <section className="flex items-center ">
           <img className="w-24 my-2 mr-2" src={profile1} alt="profile" />
 
@@ -108,7 +108,7 @@ const Profile = () => {
             />
           </div>
         </section>
-        <section className=" mx-2 mt-10 md:flex space-x-5 py-5 mb:hidden sm:hidden lg:flex-col lg:space-y-3">
+        <section className=" mx-2 mt-10 md:flex space-x-5 py-5 mb:hidden sm:hidden lg:flex-col lg:space-y-3 lg:pt-10 lg:pl-2">
           <button className="text-white lg:ml-5 my-1 bg-[#0C611A] px-2 py-1 lg:mt-0 rounded-md">
             Save Change
           </button>
