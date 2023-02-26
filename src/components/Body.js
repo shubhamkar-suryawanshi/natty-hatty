@@ -39,25 +39,25 @@ const Body = () => {
         <ul className="flex justify-between p-2 md:hidden lg:hidden">
           <Link
             to={'/'}
-            className="text-[#7D7D7D] font-bold focus:text-[#F8991F] focus:underline"
+            className="text-[#7D7D7D] active:text-[#F8991F] hover:text-[#F8991F] focus:text-[#F8991F] active:underline hover:underline focus:underline font-bold"
           >
             Profile
           </Link>
           <Link
             to={'/wallet'}
-            className="text-[#7D7D7D] font-bold focus:text-[#F8991F] focus:underline"
+            className="text-[#7D7D7D] active:text-[#F8991F] hover:text-[#F8991F] focus:text-[#F8991F] active:underline hover:underline focus:underline font-bold"
           >
             Wallet
           </Link>
           <Link
             to={'/activity'}
-            className="text-[#7D7D7D] font-bold focus:text-[#F8991F] focus:underline"
+            className="text-[#7D7D7D] active:text-[#F8991F] hover:text-[#F8991F] focus:text-[#F8991F] active:underline hover:underline focus:underline font-bold"
           >
             Activities
           </Link>
           <Link
             to={'/invities'}
-            className="text-[#7D7D7D] font-bold focus:text-[#F8991F] focus:underline"
+            className="text-[#7D7D7D] active:text-[#F8991F] hover:text-[#F8991F] focus:text-[#F8991F] active:underline hover:underline focus:underline font-bold"
           >
             Invitations
           </Link>

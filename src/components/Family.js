@@ -8,7 +8,7 @@ import prof1 from '../assets/profile1.png';
 
 const Family = () => {
   return (
-    <div className=" bg-gray-100 p-5 my-2 mx-5 rounded-md md:py-5 md:px-3 md:m-0 lg:h-[400px]">
+    <div className=" bg-gray-100 p-5 my-2 mx-5 rounded-md md:py-5 md:px-3  md:m-0 md:h-[400px] lg:h-[500px] overflow-auto hover:overflow-y-scroll">
       <div className="flex justify-between">
         <h1 className="left font-bold">My Family</h1>
         <div className="right flex space-x-1">
