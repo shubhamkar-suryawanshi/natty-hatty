@@ -20,44 +20,44 @@ const Profile = () => {
           <img className="w-24 my-2 mr-2" src={profile1} alt="profile" />
 
           <div className="m-2 ">
-            <h1 className="font-bold text-xl">Shub Surya</h1>
+            <h1 className="font-medium text-xl">Shub Surya</h1>
             <div className="flex items-center">
               <IconButton className="m-0 p-0">
-                <LocationOnIcon />
+                <LocationOnIcon className="w-4 h-4" />
               </IconButton>
               <h2 className="text-[#818181] text-sm">Kolhapur, Maharashtra</h2>
             </div>
           </div>
         </section>
-        <section className="flex justify-between space-x-4 md:pt-5 lg:flex-col lg:space-y-3">
-          <div className="flex justify-between py-1 mb:ml-[-22px] flex-col lg:flex-row">
+        <section className="flex justify-between space-x-4 md:pt-5 lg:flex-col lg:space-y-3 md:w-1/3 ">
+          <div className="flex justify-between py-1 mb:ml-[-22px] flex-col lg:flex-row ">
             <p className="pr-2  lg:pl-4">First Name:</p>
             <input
               value={user.firstName}
               onChange={(e) => setUser(e.target.value)}
-              className="lg:w-44 lg:px-2 lg:h-8 mb:w-24 sm:32 md:36 rounded-sm"
+              className="lg:w-36 lg:px-2 lg:h-8 mb:w-24 sm:w-32 md:w-32 rounded-sm"
               type="text"
               placeholder="Shub"
             />
           </div>
 
-          <div className="flex justify-between py-1 flex-col lg:flex-row">
+          <div className="flex justify-between py-1 flex-col lg:flex-row ">
             <p className="pr-2">Last Name:</p>
             <input
               value={user.lastName}
               onChange={(e) => setUser(e.target.value)}
-              className="lg:w-44 lg:px-2 lg:h-8 mb:w-24 sm:32 md:36 rounded-sm"
+              className="lg:w-36 lg:px-2 lg:h-8 mb:w-24 sm:w-32 md:w-32 rounded-sm"
               type="text"
               placeholder="Surya"
             />
           </div>
 
-          <div className="md:flex md:flex-col justify-between py-1 mb:hidden sm:hidden lg:hidden">
+          <div className="md:flex md:flex-col justify-between py-1 mb:hidden sm:hidden lg:hidden ">
             <p className="pr-2">DOB:</p>
             <input
               value={user.DOB}
               onChange={(e) => setUser(e.target.value)}
-              className="lg:w-44 lg:px-2 lg:h-8 mb:w-24 sm:32 md:36 rounded-sm"
+              className="lg:w-36 lg:px-2 lg:h-8 mb:w-24 sm:w-32 md:w-32 rounded-sm"
               type="text"
               placeholder="10/09/1994"
             />
@@ -68,20 +68,20 @@ const Profile = () => {
             <input
               value={user.email}
               onChange={(e) => setUser(e.target.value)}
-              className="lg:w-44 lg:px-2 lg:h-8 mb:w-24 sm:32 md:36 rounded-sm"
+              className="lg:w-36 lg:px-2 lg:h-8 mb:w-24 sm:w-32 md:w-32 rounded-sm"
               type="email"
               placeholder="surya@nattyhatty.com"
             />
           </div>
         </section>
 
-        <section className=" flex justify-between space-x-4 lg:flex-col lg:space-y-3">
+        <section className=" flex justify-between space-x-4 lg:flex-col lg:space-y-3 md:w-1/3 ">
           <div className="flex justify-between py-1 lg:pt-5 flex-col lg:flex-row">
             <p className="pr-2 lg:pl-4">Phone:</p>
             <input
               value={user.phone}
               onChange={(e) => setUser(e.target.value)}
-              className="lg:w-44 lg:px-2 lg:h-8 mb:w-24 sm:32 md:36 rounded-sm"
+              className="lg:w-36 lg:px-2 lg:h-8 mb:w-24 sm:w-32 md:w-32 rounded-sm"
               type="text"
               placeholder="8485060708"
             />
@@ -92,7 +92,7 @@ const Profile = () => {
             <input
               value={user.gradYear}
               onChange={(e) => setUser(e.target.value)}
-              className="lg:w-44 lg:px-2 lg:h-8 mb:w-24 sm:32 md:36 rounded-sm"
+              className="lg:w-36 lg:px-2 lg:h-8 mb:w-24 sm:w-32 md:w-32 rounded-sm"
               type="text"
               placeholder="2020"
             />
@@ -102,20 +102,20 @@ const Profile = () => {
             <input
               value={user.DOB}
               onChange={(e) => setUser(e.target.value)}
-              className="lg:w-44 lg:px-2 lg:h-8 mb:w-24 sm:32 md:36 rounded-sm"
+              className="lg:w-36 lg:px-2 lg:h-8 mb:w-24 sm:w-32 md:w-32 rounded-sm"
               type="text"
               placeholder="10/09/1994"
             />
           </div>
         </section>
         <section className=" mx-2 mt-10 md:flex space-x-5 py-5 mb:hidden sm:hidden lg:flex-col lg:space-y-3 lg:pt-10 lg:pl-2">
-          <button className="text-white lg:ml-5 my-1 bg-[#0C611A] px-2 py-1 lg:mt-0 rounded-md">
+          <button className="text-white lg:ml-5 my-1 bg-[#0C611A] font-[Work_Sans] font-semibold text-sm px-2 py-1 lg:mt-0 rounded-sm">
             Save Change
           </button>
-          <button className="text-white my-1 bg-[#232E3E] px-2 py-1 rounded-md">
+          <button className="text-white my-1 bg-[#232E3E] font-[Work_Sans] font-semibold text-sm px-2 py-1 rounded-sm">
             Change Password
           </button>
-          <button className="text-white my-1 bg-[#FF3A3A] px-2 py-1 rounded-md">
+          <button className="text-white my-1 bg-[#FF3A3A] font-[Work_Sans] font-semibold text-sm px-2 py-1 rounded-sm">
             Leave Family
           </button>
         </section>

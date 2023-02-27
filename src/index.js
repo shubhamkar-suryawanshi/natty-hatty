@@ -29,7 +29,7 @@ import Dropdown from './components/Dropdown';
 const AppLayout = () => {
   const [isVisible, setIsVisible] = useState(true);
   return isVisible ? (
-    <div>
+    <div className="">
       <StyledEngineProvider injectFirst>
         <div className="flex items-center p-2 justify-between bg-[#232E3E] text-white md:p-3">
           <div className="left flex items-center">
@@ -37,11 +37,11 @@ const AppLayout = () => {
               <MenuIcon className="text-[#F8991F]" />
             </IconButton>
 
-            <div className="px-1 font-bold">
+            <div className="px-1 font-bold font-[Work_Sans]">
               <Link to={'/'}>LOGO</Link>
             </div>
 
-            <ul className="hidden  lg:flex lg: pl-28 lg:space-x-20">
+            <ul className="hidden font-[Work_Sans] lg:flex lg: pl-28 lg:space-x-20">
               <li className="dropdown relative inline-block">
                 <Dropdown />
               </li>
@@ -70,7 +70,7 @@ const AppLayout = () => {
       </StyledEngineProvider>
     </div>
   ) : (
-    <div className="bg-[#232E3E] p-5 h-[100vh] space-y-4">
+    <div className="bg-[#232E3E] p-5 h-[100vh] space-y-4 font-[Work_Sans]">
       <section className="flex justify-between  items-center">
         <div className="px-1 font-bold text-white">
           <Link to={'/'}>LOGO</Link>
