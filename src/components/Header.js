@@ -7,7 +7,7 @@ import Dropdown from './Dropdown';
 
 const Header = () => {
   return (
-    <div className="flex items-center p-2 justify-between bg-gray-700 text-white md:p-3">
+    <div className="flex items-center p-2 justify-between bg-[#232E3E] text-white md:p-3">
       <div className="left flex items-center">
         <IconButton className="lg:hidden">
           <MenuIcon className="text-[#F8991F]" />
@@ -22,10 +22,10 @@ const Header = () => {
             <Dropdown />
           </li>
           <li className="">
-            <Link to={'/about'}>Menu 2</Link>
+            <Link to={'/'}>Menu 2</Link>
           </li>
           <li className="">
-            <Link to={'/contact'}>Menu 3</Link>
+            <Link to={'/'}>Menu 3</Link>
           </li>
         </ul>
       </div>
