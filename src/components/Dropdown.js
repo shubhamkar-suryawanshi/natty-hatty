@@ -14,10 +14,7 @@ const Dropdown = () => {
             id="menu-button"
             aria-expanded="true"
             aria-haspopup="true"
-            onClick={() => setISVisible(true)}
-            onMouseEnter={() => {
-              setISVisible(true);
-            }}
+            onClick={() => setISVisible(!isVisible)}
           >
             Menu 1
           </button>
@@ -29,8 +26,7 @@ const Dropdown = () => {
             role="menu"
             aria-labelledby="menu-button"
             tabindex="-1"
-            onMouseEnter={() => setISVisible(true)}
-            onMouseLeave={() => setISVisible(false)}
+            onMouseLeave={() => setISVisible(!isVisible)}
           >
             <div className="py-1" role="none">
               <Link

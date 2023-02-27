@@ -11,25 +11,20 @@ const MobileDropdown = () => {
   return (
     <div>
       <div className="">
-        <div className="flex space-x-2 items-center">
-          <img
-            className=""
-            alt="menu 1"
-            src={menu1}
-            onClick={() => setIsVisible(false)}
-          />
-          <button
-            type="button"
-            className="cursor-pointer text-[#F8991F]"
-            onClick={() => setIsVisible(true)}
-          >
+        <div
+          className="flex space-x-2 items-center"
+          onClick={() => setIsVisible(!isVisible)}
+        >
+          <img className="" alt="menu 1" src={menu1} />
+          <button type="button" className="cursor-pointer text-[#F8991F] ">
             Menu 1
           </button>
-          <IconButton
-            className="w-4 h-4 text-white pl-20"
-            onClick={() => setIsVisible(false)}
-          >
-            {isVisible ? <KeyboardArrowUpIcon /> : <KeyboardArrowDownIcon />}
+          <IconButton className=" text-white pl-0 w-[255px]">
+            {isVisible ? (
+              <KeyboardArrowUpIcon className="w-4 h-4" />
+            ) : (
+              <KeyboardArrowDownIcon className="w-4 h-4" />
+            )}
           </IconButton>
         </div>
 
