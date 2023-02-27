@@ -1,12 +1,19 @@
 import dots from '../assets/dots.svg';
 import { Link } from 'react-router-dom';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import MyProfile from './MyProfile';
 import Tablet from './Tablet';
 import Desktop from './Desktop';
 
 const Body = () => {
-  const [isSuccessful, setIsSuccessful] = useState(true);
+  const [isSuccessful, setIsSuccessful] = useState('');
+  const [active, setActive] = useState(false);
+
+  useEffect(() => {
+    document.getElementById('btn1').style.color = '#F8991F';
+    document.getElementById('btn1').style.textDecoration = 'underline';
+  }, [active]);
+
   return (
     <div>
       <div className="md:hidden lg:block">
@@ -38,24 +45,32 @@ const Body = () => {
         </div>
         <ul className="flex justify-between p-2 md:hidden lg:hidden">
           <Link
+            onClick={() => setActive('pro')}
+            id="btn1"
             to={'/'}
             className="text-[#7D7D7D] active:text-[#F8991F] hover:text-[#F8991F] focus:text-[#F8991F] active:underline hover:underline focus:underline font-bold"
           >
             Profile
           </Link>
           <Link
+            onClick={() => setActive('wall')}
+            id="btn2"
             to={'/wallet'}
             className="text-[#7D7D7D] active:text-[#F8991F] hover:text-[#F8991F] focus:text-[#F8991F] active:underline hover:underline focus:underline font-bold"
           >
             Wallet
           </Link>
           <Link
+            onClick={() => setActive('act')}
+            id="btn3"
             to={'/activity'}
             className="text-[#7D7D7D] active:text-[#F8991F] hover:text-[#F8991F] focus:text-[#F8991F] active:underline hover:underline focus:underline font-bold"
           >
             Activities
           </Link>
           <Link
+            onClick={() => setActive('in')}
+            id="btn4"
             to={'/invities'}
             className="text-[#7D7D7D] active:text-[#F8991F] hover:text-[#F8991F] focus:text-[#F8991F] active:underline hover:underline focus:underline font-bold"
           >
