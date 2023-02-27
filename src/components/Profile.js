@@ -29,7 +29,7 @@ const Profile = () => {
             </div>
           </div>
         </section>
-        <section className="flex justify-between space-x-4 md:pt-5 lg:flex-col lg:space-y-3 md:w-1/3 ">
+        <section className="flex justify-between space-x-4 md:pt-5 lg:flex-col lg:space-y-3 ">
           <div className="flex justify-between py-1 mb:ml-[-22px] flex-col lg:flex-row ">
             <p className="pr-2  lg:pl-4">First Name:</p>
             <input
@@ -75,7 +75,7 @@ const Profile = () => {
           </div>
         </section>
 
-        <section className=" flex justify-between space-x-4 lg:flex-col lg:space-y-3 md:w-1/3 ">
+        <section className=" flex justify-between space-x-4 lg:flex-col lg:space-y-3  ">
           <div className="flex justify-between py-1 lg:pt-5 flex-col lg:flex-row">
             <p className="pr-2 lg:pl-4">Phone:</p>
             <input
