@@ -109,13 +109,13 @@ const Profile = () => {
           </div>
         </section>
         <section className=" mx-2 mt-10 md:flex space-x-5 py-5 mb:hidden sm:hidden lg:flex-col lg:space-y-3 lg:pt-10 lg:pl-2">
-          <button className="text-white lg:ml-5 my-1 bg-[#0C611A] font-[Work_Sans] font-semibold text-sm px-2 py-1 lg:mt-0 rounded-sm">
+          <button className="text-white lg:ml-5 my-1 bg-[#0C611A] font-[Work_Sans] font-semibold text-sm px-2 py-1 lg:mt-0 rounded-md">
             Save Change
           </button>
-          <button className="text-white my-1 bg-[#232E3E] font-[Work_Sans] font-semibold text-sm px-2 py-1 rounded-sm">
+          <button className="text-white my-1 bg-[#232E3E] font-[Work_Sans] font-semibold text-sm px-2 py-1 rounded-md">
             Change Password
           </button>
-          <button className="text-white my-1 bg-[#FF3A3A] font-[Work_Sans] font-semibold text-sm px-2 py-1 rounded-sm">
+          <button className="text-white my-1 bg-[#FF3A3A] font-[Work_Sans] font-semibold text-sm px-2 py-1 rounded-md">
             Leave Family
           </button>
         </section>

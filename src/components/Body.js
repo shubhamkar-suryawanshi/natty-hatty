@@ -21,7 +21,7 @@ const Body = () => {
           <h1 className=" font-bold text-xl md:hidden lg:block">My Account</h1>
           {isSuccessful ? (
             <button
-              className="mb:hidden sm:hidden md:hidden lg:block my-1 text-green-700  bg-green-100 font-semibold w-72 py-1 rounded-sm"
+              className="mb:hidden sm:hidden md:hidden lg:block my-1 text-green-700  bg-green-100 font-semibold w-72 py-1 rounded-md"
               onClick={() => {
                 setIsSuccessful(false);
               }}
@@ -30,7 +30,7 @@ const Body = () => {
             </button>
           ) : (
             <button
-              className="mb:hidden sm:hidden md:hidden lg:block my-1 text-red-700  bg-red-100 font-semibold w-72 py-1 rounded-sm"
+              className="mb:hidden sm:hidden md:hidden lg:block my-1 text-red-700  bg-red-100 font-semibold w-72 py-1 rounded-md"
               onClick={() => {
                 setIsSuccessful(true);
               }}
@@ -39,7 +39,7 @@ const Body = () => {
             </button>
           )}
           <img className=" md:hidden lg:hidden" src={dots} alt="dots" />
-          <button className="mb:hidden sm:hidden md:hidden lg:block text-white my-1 bg-gray-700 px-2 py-1 rounded-sm">
+          <button className="mb:hidden sm:hidden md:hidden lg:block text-white my-1 bg-gray-700 px-2 py-1 rounded-md">
             View Button
           </button>
         </div>

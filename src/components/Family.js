@@ -8,8 +8,11 @@ import prof1 from '../assets/profile1.png';
 
 const Family = () => {
   return (
-    <div className=" bg-gray-100 p-5 my-2 mx-5 rounded-md md:py-5 md:px-3  md:m-0 md:h-[400px] lg:h-[500px] overflow-auto hover:overflow-y-scroll">
-      <div className="flex justify-between">
+    <div
+      className=" bg-gray-100 p-5 my-2 mx-5 rounded-md md:py-5 md:px-3  md:m-0 md:h-[400px] lg:h-[500px] scrollbar-thin sm:scrollbar-thin scrollbar-thumb-[#232E3E] scrollbar-track-[#E8E8E8]scrollbar-track-rounded-full scrollbar-thumb-rounded-full  overflow-y-scroll"
+      style={{ scrollbarWidth: '3px' }}
+    >
+      <div className="head flex justify-between">
         <h1 className="left font-bold">Family</h1>
         <div className="right flex space-x-1">
           <IconButton className="">
@@ -20,7 +23,7 @@ const Family = () => {
           </button>
         </div>
       </div>
-      <div className="flex items-center bg-[#F8991F] rounded-md justify-between my-2">
+      <div className="admin flex items-center bg-[#F8991F] rounded-md justify-between my-2">
         <div className="flex items-center  ">
           <img className="w-8 m-2" src={prof} alt="img" />
           <p className="font-medium text-white">
@@ -29,7 +32,7 @@ const Family = () => {
         </div>
 
         <div className="flex items-center mr-2 space-x-1 ">
-          <button className="my-1 h-6 w-20  text-center font-[Work_Sans] font-semibold text-sm px-2  rounded-sm  align-middle bg-white">
+          <button className="my-1 h-6 w-20  text-center font-[Work_Sans] font-semibold text-sm px-2  rounded-md  align-middle bg-white">
             ADMIN
           </button>
           <div className="bg-white w-6 h-6 align-middle pt-2 pl-1 rounded-sm">
@@ -37,7 +40,7 @@ const Family = () => {
           </div>
         </div>
       </div>
-      <div>
+      <div className="members">
         {users.map((user, index) => (
           <div
             key={index}
@@ -51,7 +54,7 @@ const Family = () => {
             </div>
             <button
               key={index}
-              className="my-1 mr-2 w-20 font-[Work_Sans] font-semibold text-sm px-2 py-1 rounded-sm bg-[#CAD7F5]"
+              className="my-1 mr-2 w-20 font-[Work_Sans] font-semibold text-sm px-2 py-1 rounded-md bg-[#CAD7F5]"
             >
               MEMBER
             </button>

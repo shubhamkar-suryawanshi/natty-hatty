@@ -13,7 +13,7 @@ const Account = () => {
               <h5 className="font-md text-gray-300">Expires 09/30</h5>
             </div>
           </div>
-          <button className="rounded-sm md:hidden  text-white bg-[#0C611A] w-20 h-8 m-4 cursor-pointer">
+          <button className="rounded-md md:hidden  text-white bg-[#0C611A] w-20 h-8 m-4 cursor-pointer">
             Edit
           </button>
         </div>
@@ -25,7 +25,7 @@ const Account = () => {
               <h5 className="font-md text-gray-300">Expires 04/27</h5>
             </div>
           </div>
-          <button className="rounded-sm md:hidden  text-white bg-[#0C611A] w-20 h-8 m-4 cursor-pointer">
+          <button className="rounded-md md:hidden  text-white bg-[#0C611A] w-20 h-8 m-4 cursor-pointer">
             Edit
           </button>
         </div>

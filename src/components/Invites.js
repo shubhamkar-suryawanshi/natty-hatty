@@ -5,7 +5,7 @@ import SentRequest from './SentRequest';
 const Invites = () => {
   const [request, setRequest] = useState('received');
   return (
-    <div className="md:bg-[#F5F6F8] md:pb-2 overflow-auto hover:overflow-y-scroll h-[500px]">
+    <div className="md:bg-[#F5F6F8] md:pb-2 scrollbar-thin scrollbar-thumb-[#232E3E] scrollbar-track-[#E8E8E8]scrollbar-track-rounded-full scrollbar-thumb-rounded-full  overflow-y-scroll scrollbar-thumb-[10px] h-[500px]">
       <div className="head flex justify-between p-5 md:bg-[#F5F6F8]">
         <h1 className="font-bold">Invitations</h1>
         <div className="bg-[#DBDBDB] rounded-full">

@@ -10,7 +10,7 @@ const Address = () => {
           <div className="block text-end lg:hidden">
             {isClicked ? (
               <button
-                className="text-white mt-1 bg-[#232E3E] font-[Work_Sans] font-medium text-sm px-2 py-1 rounded-sm w-36"
+                className="text-white mt-1 bg-[#232E3E] font-[Work_Sans] font-medium text-sm px-2 py-1 rounded-md w-36"
                 onClick={() => {
                   setIsClicked(false);
                 }}
@@ -19,7 +19,7 @@ const Address = () => {
               </button>
             ) : (
               <button
-                className="text-white mt-1 bg-[#0C611A] font-[Work_Sans] font-medium text-sm px-2 py-1 rounded-sm w-36"
+                className="text-white mt-1 bg-[#0C611A] font-[Work_Sans] font-medium text-sm px-2 py-1 rounded-md w-36"
                 onClick={() => {
                   setIsClicked(true);
                 }}
@@ -85,7 +85,7 @@ const Address = () => {
         <div className="mb:block sm:block md:hidden lg:hidden">
           {isClicked ? (
             <button
-              className="text-white mt-1 bg-[#232E3E] font-[Work_Sans] font-medium text-sm px-2 py-1 rounded-sm w-36 lg:hidden"
+              className="text-white mt-1 bg-[#232E3E] font-[Work_Sans] font-medium text-sm px-2 py-1 rounded-md w-36 lg:hidden"
               onClick={() => {
                 setIsClicked(false);
               }}
@@ -94,7 +94,7 @@ const Address = () => {
             </button>
           ) : (
             <button
-              className="text-white mt-1 bg-[#0C611A] font-[Work_Sans] font-medium text-sm px-2 py-1 rounded-sm w-36 lg:hidden"
+              className="text-white mt-1 bg-[#0C611A] font-[Work_Sans] font-medium text-sm px-2 py-1 rounded-md w-36 lg:hidden"
               onClick={() => {
                 setIsClicked(false);
               }}
@@ -107,7 +107,7 @@ const Address = () => {
       <div className=" mb:hidden sm:hidden md:hidden lg:block text-end lg:px-8">
         {isClicked ? (
           <button
-            className="text-white mt-1 bg-[#232E3E] font-[Work_Sans] font-medium text-sm px-2 py-1 rounded-sm w-36"
+            className="text-white mt-1 bg-[#232E3E] font-[Work_Sans] font-medium text-sm px-2 py-1 rounded-md w-36"
             onClick={() => {
               setIsClicked(false);
             }}
@@ -116,7 +116,7 @@ const Address = () => {
           </button>
         ) : (
           <button
-            className="text-white mt-1 bg-[#0C611A] font-[Work_Sans] font-medium text-sm px-2 py-1 rounded-sm w-36"
+            className="text-white mt-1 bg-[#0C611A] font-[Work_Sans] font-medium text-sm px-2 py-1 rounded-md w-36"
             onClick={() => {
               setIsClicked(true);
             }}

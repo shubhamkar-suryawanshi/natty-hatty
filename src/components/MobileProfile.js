@@ -28,7 +28,7 @@ const MobileProfile = () => {
 
       <section className="text-white">
         <ul className="space-y-4">
-          <li className=" relative inline-block">
+          <li className=" relative inline-block w-full">
             <MobileDropdown />
           </li>
           <li className="flex items-center space-x-2">
@@ -45,13 +45,6 @@ const MobileProfile = () => {
           </li>
         </ul>
       </section>
-
-      {/*<div className="right flex items-center">
-        <IconButton>
-          <NotificationsNoneIcon className="text-white" />
-        </IconButton>
-        <img className="w-8 mr-5" src={pro} alt="profile" />
-  </div>*/}
     </div>
   );
 };
