@@ -3,7 +3,7 @@ import { useState } from 'react';
 const Address = () => {
   const [isClicked, setIsClicked] = useState(true);
   return (
-    <div className="bg-gray-100 p-5 lg:m-0 md:p-0 m-5 rounded-sm">
+    <div className="bg-[#F5F6F8] p-5 lg:m-0 md:p-0 m-5 rounded-sm">
       <div className="flex flex-col  md:py-5 md:px-1 md:m-0 lg:p-5 lg:space-y-5">
         <div className="mb:hidden sm:hidden  md:flex md:justify-between">
           <h1 className="font-bold p-2 lg:p-0 lg:m-0">Billing Address</h1>
