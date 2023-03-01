@@ -6,7 +6,7 @@ import Invites from './Invites';
 const MyInvities = () => {
   const [isSuccessful, setIsSuccessful] = useState(true);
   return (
-    <div>
+    <div className="mb:m-2">
       <div className="heading flex items-center justify-between p-2">
         <h1 className=" font-bold text-xl md:hidden lg:block">My Account</h1>
         {isSuccessful ? (
