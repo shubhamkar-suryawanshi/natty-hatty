@@ -3,7 +3,7 @@ import activity from '../assets/activity.svg';
 
 const Activeity = () => {
   return (
-    <div>
+    <div className=" space-y-2">
       <div className="flex  items-center space-x-4">
         <div className="w-7 h-7 p-[5px] border rounded-full bg-[#DEE8FF]">
           <img className="w-4 h-4 " src={activity} alt="logo" />

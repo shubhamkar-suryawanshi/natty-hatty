@@ -35,7 +35,7 @@ const Profile = () => {
             <input
               value={user.firstName}
               onChange={(e) => setUser(e.target.value)}
-              className="lg:w-36 lg:px-2 lg:h-8 mb:w-24 sm:w-32 md:w-32 rounded-sm"
+              className="lg:w-48 lg:px-2 lg:h-8 mb:w-24 sm:w-32 md:w-32 rounded-sm"
               type="text"
               placeholder="Shub"
             />
@@ -46,7 +46,7 @@ const Profile = () => {
             <input
               value={user.lastName}
               onChange={(e) => setUser(e.target.value)}
-              className="lg:w-36 lg:px-2 lg:h-8 mb:w-24 sm:w-32 md:w-32 rounded-sm"
+              className="lg:w-48 lg:px-2 lg:h-8 mb:w-24 sm:w-32 md:w-32 rounded-sm"
               type="text"
               placeholder="Surya"
             />
@@ -68,7 +68,7 @@ const Profile = () => {
             <input
               value={user.email}
               onChange={(e) => setUser(e.target.value)}
-              className="lg:w-36 lg:px-2 lg:h-8 mb:w-24 sm:w-32 md:w-32 rounded-sm"
+              className="lg:w-48 lg:px-2 lg:h-8 mb:w-24 sm:w-32 md:w-32 rounded-sm"
               type="email"
               placeholder="surya@nattyhatty.com"
             />
@@ -98,7 +98,7 @@ const Profile = () => {
             />
           </div>
           <div className="lg:flex justify-between py-1 mb:hidden sm:hidden">
-            <p className="pr-2">DOB:</p>
+            <p className="pr-2">Date of Birth:</p>
             <input
               value={user.DOB}
               onChange={(e) => setUser(e.target.value)}

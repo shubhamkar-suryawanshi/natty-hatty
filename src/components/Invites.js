@@ -10,7 +10,7 @@ const Invites = () => {
         <h1 className="font-bold">Invitations</h1>
         <div className="bg-[#DBDBDB] rounded-full">
           <button
-            className="bg-[#DBDBDB] py-1 px-2 text-sm font-semibold rounded-l-full hover:rounded-full hover:bg-orange-500 hover:text-white "
+            className="bg-[#DBDBDB] py-1 px-2 text-sm font-semibold rounded-l-full hover:rounded-full hover:bg-[#F8991F] focus:bg-[#F8991F] checked:bg-[#F8991F] hover:text-white focus:text-white checked:text-white focus:rounded-full checked:rounded-full"
             onClick={() => {
               setRequest('received');
             }}
@@ -18,7 +18,7 @@ const Invites = () => {
             Sent<span className="pl-1">(6)</span>
           </button>
           <button
-            className="bg-[#DBDBDB] py-1 px-2 text-sm font-semibold rounded-r-full hover:rounded-full hover:bg-orange-500 hover:text-white"
+            className="bg-[#DBDBDB] py-1 px-2 text-sm font-semibold rounded-r-full hover:rounded-full hover:bg-[#F8991F] focus:bg-[#F8991F] checked:bg-[#F8991F] hover:text-white focus:text-white checked:text-white focus:rounded-full checked:rounded-full"
             onClick={() => {
               setRequest('sent');
             }}

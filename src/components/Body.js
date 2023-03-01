@@ -15,7 +15,7 @@ const Body = () => {
   }, [active]);
 
   return (
-    <div>
+    <div className="m-5">
       <div className="md:hidden lg:block">
         <div className="heading flex items-center justify-between p-2">
           <h1 className=" font-bold text-xl md:hidden lg:block">My Account</h1>
